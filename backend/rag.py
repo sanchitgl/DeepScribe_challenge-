@@ -95,6 +95,8 @@ class TranscriptRAG:
         
         return embeddings
     
+    
+
     def get_relevant_chunks(self, query, top_k=3):
         """
         Get the most relevant chunks for a query
@@ -106,6 +108,7 @@ class TranscriptRAG:
         Returns:
             list: List of relevant chunk texts
         """
+        
         try:
             # Generate query embedding
             client = openai.OpenAI(api_key=os.getenv("OPENAI_API_KEY"))
