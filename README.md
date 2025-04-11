@@ -2,7 +2,7 @@
 
 ## Demo
 
-[Live Demo](https://deepscribe-med-assistant.onrender.com/)
+[https://deepscribe-med-assistant.onrender.com/](https://deepscribe-med-assistant.onrender.com/)
 
 ## Features
 
@@ -97,14 +97,11 @@ URL - https://deepscribe-med-assistant.onrender.com/
 
 ## Technical Challenges and Solutions
 
-**Challenge: Efficient Handling of Long Transcripts**
-**Solution**: Implemented a chunking strategy that preserves conversation context while enabling efficient retrieval.
+**Efficient Handling of Long Transcripts**: Implemented a chunking strategy that preserves conversation context while enabling efficient retrieval.
 
-**Challenge: Maintaining Context in Follow-up Questions**
-**Solution**: Created a conversation history management system that maintains relevant context while avoiding token limitations.
+**Maintaining Context in Follow-up Questions** : Created a conversation history management system that maintains relevant context while avoiding token limitations.
 
-**Challenge: Accurate Information Retrieval**
-**Solution**: Developed a custom RAG implementation using vector similarity search to find the most relevant transcript sections.
+**Accurate Information Retrieval**: Developed a custom RAG implementation using vector similarity search to find the most relevant transcript sections.
 
 ---
 
