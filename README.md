@@ -43,6 +43,24 @@ This approach allows for:
 - Support for longer transcripts without hitting token limits
 - Faster response times and reduced API costs
 
+
+## Future Enhancements
+
+##### Adaptive Query Routing with LLM-Based Agents
+
+We plan to integrate an intelligent decision-making layer powered by LLM-based agents to optimize context selection and improve response efficiency. This enhancement will enable the system to dynamically decide whether to:
+
+	-	Pass the entire SOAP note for summary-based or high-level questions (e.g., “Give an overview of the patient’s condition”), where a complete and structured context is essential.
+
+	-	Use RAG with selectively retrieved transcript chunks for specific or localized questions (e.g., “What medications were discussed?” or “What did the patient report at the beginning of the session?”), where only a few relevant pieces of information are needed.
+
+**Technical Plan:**
+	-	Implement a query classifier agent to categorize incoming user queries (e.g., summary, specific, follow-up).
+	-	Based on classification, the system will route the query through one of two pipelines:
+      1.	SOAP-based pipeline: Constructs prompts using the full structured SOAP note.
+      2.	RAG pipeline: Uses vector-based retrieval over transcript chunks to construct efficient prompts with only relevant context.
+	-	This hybrid strategy will reduce token usage for simple queries while maintaining high accuracy for summary or clinical overview requests.
+
 ## How to Use
 
 1. **Browse the Transcript**: View the full patient-provider conversation with search functionality
