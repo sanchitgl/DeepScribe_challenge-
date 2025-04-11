@@ -48,7 +48,7 @@ This approach allows for:
 
 ##### Adaptive Query Routing with LLM-Based Agents
 
-We plan to integrate an intelligent decision-making layer powered by LLM-based agents to optimize context selection and improve response efficiency. This enhancement will enable the system to dynamically decide whether to:
+Integrate an intelligent decision-making layer powered by LLM-based agents to optimize context selection and improve response efficiency. This enhancement will enable the system to dynamically decide whether to:
 - **Pass the entire SOAP note** for summary-based or high-level questions  
   _Example_: "Give an overview of the patient’s condition" — where full structured context is essential.
   
@@ -62,11 +62,6 @@ We plan to integrate an intelligent decision-making layer powered by LLM-based a
   1. **SOAP-based pipeline**: Constructs prompts using the full structured SOAP note.
   2. **RAG pipeline**: Uses embedding-based retrieval to select and pass only relevant transcript chunks.
 
-This hybrid approach aims to:
-- Minimize token usage for localized queries
-- Preserve answer quality for broader summary requests
-- Improve scalability and response time
-- Optimize API usage and costs
 
 ## How to Use
 
