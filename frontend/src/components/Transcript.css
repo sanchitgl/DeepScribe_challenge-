@@ -1,0 +1,94 @@
+.transcript-container {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    border-radius: 0.5rem;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+  }
+  
+  .transcript-header {
+    padding: 1rem;
+    background-color: #f8f9fa;
+    border-bottom: 1px solid #e9ecef;
+  }
+  
+  .transcript-header h3 {
+    margin: 0 0 0.5rem 0;
+    font-size: 1.2rem;
+    font-weight: 600;
+  }
+  
+  .patient-info {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin-bottom: 1rem;
+    font-size: 0.9rem;
+  }
+  
+  .patient-info p {
+    margin: 0;
+  }
+  
+  .transcript-search {
+    margin-bottom: 0;
+  }
+  
+  .transcript-body {
+    flex: 1;
+    padding: 0.5rem;
+    overflow-y: auto;
+  }
+  
+  .transcript-entry {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    grid-template-rows: auto 1fr;
+    grid-template-areas:
+      "timestamp speaker"
+      "timestamp text";
+    gap: 0.25rem 1rem;
+    padding: 0.75rem;
+    margin-bottom: 0.5rem;
+    border-radius: 0.5rem;
+    background-color: #f8f9fa;
+  }
+  
+  .provider-entry {
+    background-color: #e9f5ff;
+  }
+  
+  .patient-entry {
+    background-color: #f5f5f5;
+  }
+  
+  .transcript-timestamp {
+    grid-area: timestamp;
+    color: #6c757d;
+    font-size: 0.8rem;
+    font-family: monospace;
+  }
+  
+  .transcript-speaker {
+    grid-area: speaker;
+    font-weight: 600;
+  }
+  
+  .transcript-text {
+    grid-area: text;
+    margin-top: 0.25rem;
+  }
+  
+  .highlight {
+    background-color: #ffeb3b;
+    padding: 0 2px;
+    border-radius: 2px;
+  }
+  
+  .no-results {
+    padding: 2rem;
+    text-align: center;
+    color: #6c757d;
+  }

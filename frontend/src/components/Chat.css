@@ -1,0 +1,180 @@
+.chat-container {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    background-color: white;
+    border-radius: 0.5rem;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+  }
+  
+  .chat-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    background-color: #f8f9fa;
+    border-bottom: 1px solid #e9ecef;
+  }
+  
+  .chat-header h3 {
+    margin: 0;
+    font-size: 1.2rem;
+    font-weight: 600;
+  }
+  
+  .messages-container {
+    flex: 1;
+    padding: 1rem;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+  
+  .message {
+    display: flex;
+    max-width: 80%;
+    padding: 0.75rem 1rem;
+    border-radius: 1rem;
+    animation: fadeIn 0.3s ease-in-out;
+  }
+  
+  @keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+  
+  .user-message {
+    background-color: #e9f5ff;
+    align-self: flex-end;
+    border-bottom-right-radius: 0.25rem;
+  }
+  
+  .assistant-message {
+    background-color: #f1f3f5;
+    align-self: flex-start;
+    border-bottom-left-radius: 0.25rem;
+  }
+  
+  .message-content {
+    word-break: break-word;
+  }
+  
+  .message-form {
+    padding: 1rem;
+    border-top: 1px solid #e9ecef;
+  }
+  
+  .message-input-group {
+    display: flex;
+    gap: 0.5rem;
+  }
+  
+  .message-error {
+    align-self: center;
+    width: 100%;
+    margin-bottom: 0;
+  }
+  
+  .suggested-questions {
+    padding: 0.75rem 1rem;
+    background-color: #f8f9fa;
+    border-top: 1px solid #e9ecef;
+    font-size: 0.8rem;
+  }
+  
+  .suggested-questions p {
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+    color: #6c757d;
+  }
+  
+  .suggested-questions ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+  }
+  
+  .suggested-questions li {
+    padding: 0.4rem 0.8rem;
+    background-color: white;
+    border: 1px solid #dee2e6;
+    border-radius: 1rem;
+    cursor: pointer;
+    transition: all 0.2s;
+  }
+  
+  .suggested-questions li:hover {
+    background-color: #e9ecef;
+    border-color: #ced4da;
+  }
+
+  .relevant-chunks-container {
+    margin: 0.55rem 0;
+    align-self: flex-start;
+  }
+  
+  .chunks-toggle {
+    font-size: 0.75rem!important;
+    padding: 0.15rem 0.4rem !important;
+    color: #6c757d;
+    background-color: white;
+    border: 1px solid #dee2e6;
+    border-radius: 1rem;
+    cursor: pointer;
+  }
+  
+  .chunks-toggle:hover {
+    background-color: #e9ecef;
+  }
+  
+  .chunks-list {
+    margin-top: 0.5rem;
+    padding: 1rem;
+    background-color: white;
+    border: 1px solid #e9ecef;
+    border-radius: 0.5rem;
+    max-height: 250px;
+    overflow-y: auto;
+    font-size: 0.75rem;
+    max-width: 900px;
+  }
+  
+  .chunks-list h6 {
+    margin-bottom: 0.5rem;
+    color: #495057;
+    font-weight: 500;
+    font-size: 0.8rem;
+  }
+  
+  .context-chunk {
+    margin-bottom: 0.75rem;
+    padding: 0.75rem;
+    background-color: #f8f9fa;
+    border-radius: 0.4rem;
+    border-left: 3px solid #3498db;
+  }
+  
+  .context-chunk:before {
+    /* content: attr(data-index) "."; */
+    font-weight: 600;
+    color: #3498db;
+    margin-right: 0.5rem;
+  }
+  
+  .chunk-header {
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.8rem;
+    color: #6c757d;
+    margin-bottom: 0.25rem;
+  }
+  
+  .chunk-content {
+    white-space: pre-line;
+    color: #495057;
+  }
