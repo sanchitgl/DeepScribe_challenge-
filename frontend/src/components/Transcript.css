@@ -87,12 +87,14 @@
   
   .transcript-speaker {
     grid-area: speaker;
-    font-weight: 600;
+    font-weight: 500;
+    font-size: 1rem;
   }
   
   .transcript-text {
     grid-area: text;
     margin-top: 0.25rem;
+    font-size: 0.9rem;
   }
   
   .highlight {

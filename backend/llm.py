@@ -125,8 +125,7 @@ def generate_suggested_questions(conversation_history):
     1. Only suggest questions that can be answered based on information in the SOAP note
     2. Phrase questions to ask about what's documented in 3rd person
     3. Avoid suggesting questions that have already been answered in the conversation
-    4. Focus on clinically relevant information a provider would want to know
-    5. Questions should be short, general and succinct
+    4. Questions should be short, general and succinct
     
     Based on the conversation and patient's SOAP so far, suggest 3 follow-up succinct questions.
     
@@ -146,7 +145,7 @@ def generate_suggested_questions(conversation_history):
         # Call the OpenAI API
         client = openai.OpenAI(api_key=os.getenv("OPENAI_API_KEY"))
         response = client.chat.completions.create(
-            model="gpt-4",  # Using a faster, cheaper model for suggestions
+            model="gpt-4o",  # Using a faster, cheaper model for suggestions
             messages=messages,
             max_tokens=150,
             temperature=0.5  # Slightly more creative for question variety

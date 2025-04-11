@@ -1,64 +1,71 @@
-# DeepScribe Coding Challenge
-
-This project is a solution for DeepScribe's coding challenge, creating an interactive chat interface that allows healthcare providers to query patient transcripts and receive context-aware responses using an LLM.
+# DeepScribe Medical Transcript Assistant
 
 ## Demo
 
-[Link to deployed demo](#) - *Add your deployment link once available*
+[Live Demo](https://deepscribe-med-assistant.onrender.com/)
 
 ## Features
 
-- **Transcript Management**:
-  - View and search through a medical transcript
-  - Highlighted search results
-  - Clear separation of provider and patient dialogue
+- **Transcript and SOAP Note Viewer**: Easily browse, search, and navigate through the patient-provider conversation and structured medical notes
+- **AI-Powered Chat Interface**: Ask natural language questions about the transcript and receive contextually relevant answers
+- **Dynamic Suggested Questions**: Contextually relevant follow-up questions are suggested based on the conversation
+- **Retrieval-Augmented Generation (RAG)**: Smart chunking and retrieval of relevant transcript portions for more accurate and efficient responses
+- **Timestamp Filtering**: Filter transcript by specific time ranges to quickly find relevant information
+- **Relevant Context Display**: See exactly which portions of the transcript were used to generate each answer
 
-- **SOAP Note Integration**:
-  - Structured display of Subjective, Objective, Assessment, and Plan notes
-  - Formatted for readability with proper sectioning
+## Demo Recording 
 
-- **Intelligent Chat Interface**:
-  - Ask questions about the patient encounter
-  - Get context-aware responses from the AI
-  - Follow-up questions maintain conversation context
-  - Suggested questions for quick access
-  - New conversation option to reset context
 
-- **Innovative Elements**:
-  - Search functionality for quickly finding information in the transcript
-  - Visual distinction between patient and provider dialogue
-  - Clean, medical-themed UI designed for clinical use
-  - Tab-based interface to switch between transcript and SOAP note
 
-## Technical Architecture
+## Technical Implementation
 
-### Backend
-- Python with Flask API
-- OpenAI GPT integration for natural language processing
-- Context management for follow-up questions
+### Architecture
 
-### Frontend
-- React for UI components
-- Bootstrap for responsive design
-- Clean and intuitive interface for healthcare providers
+- **Frontend**: React with Bootstrap for responsive design
+- **Backend**: Python Flask API
+- **LLM Integration**: OpenAI's GPT models with context management
+- **RAG Implementation**: Custom vector search with transcript chunking
+
+### Intelligent Retrieval System
+
+The system uses sophisticated text chunking and embedding-based retrieval to:
+
+1. Break the transcript into meaningful chunks preserving conversation context
+2. Create vector embeddings of both questions and transcript chunks
+3. Retrieve the most relevant portions for each query
+4. Build contextual prompts for the LLM using only the most relevant information
+
+This approach allows for:
+- More accurate answers by focusing on relevant context
+- Support for longer transcripts without hitting token limits
+- Faster response times and reduced API costs
+
+## How to Use
+
+1. **Browse the Transcript**: View the full patient-provider conversation with search functionality
+2. **Consult the SOAP Note**: Review the structured medical documentation
+3. **Ask Questions**: Use the chat interface to ask about symptoms, treatments, follow-ups, etc.
+4. **Follow Suggestions**: Click on suggested follow-up questions for common inquiries
+5. **Filter by Time**: Use timestamp filtering to focus on specific parts of the conversation
+6. **View Context**: See which parts of the transcript were used to generate answers
 
 ## Getting Started
 
 ### Prerequisites
-- Node.js (v14 or higher)
-- Python (v3.8 or higher)
+- Python 3.9+
+- Node.js 14+
 - OpenAI API key
 
 ### Installation
 
 1. Clone the repository:
-   ```
-   git clone https://github.com/your-username/deepscribe-challenge.git
-   cd deepscribe-challenge
+   ```bash
+   git clone https://github.com/sanchitgl/DeepScribe_challenge-.git
+   cd DeepScribe_challenge-
    ```
 
 2. Set up the backend:
-   ```
+   ```bash
    cd backend
    pip install -r requirements.txt
    
@@ -70,9 +77,12 @@ This project is a solution for DeepScribe's coding challenge, creating an intera
    ```
 
 3. Set up the frontend:
-   ```
+   ```bash
    cd ../frontend
    npm install
+
+   # Create a .env file with your OpenAI API key
+   echo "REACT_APP_API_URL=http://localhost:5001" > .env
    
    # Start the React development server
    npm start
@@ -80,35 +90,22 @@ This project is a solution for DeepScribe's coding challenge, creating an intera
 
 4. Open your browser and navigate to `http://localhost:3000`
 
-## Approach and Design Decisions
+## Deployment
 
-### LLM Integration
-I integrated OpenAI's GPT model to process queries with specific prompt engineering to:
-- Keep responses focused on transcript content
-- Maintain conversation context for follow-ups
-- Provide concise but informative answers
+The application is deployed on Render with separate services for the backend API and frontend interface.
 
-### Handling Long Transcripts
-While this demo uses a relatively short transcript, the approach scales to longer conversations by:
-- Implementing efficient search functionality
-- Using a scrollable interface with clear timestamps
-- Providing helpful UI for navigating through content
 
-### Edge Cases Handled
-- No matching results for searches
-- Loading states for API calls
-- Error handling for failed requests
-- Context management for multi-turn conversations
+## Technical Challenges and Solutions
 
-## Future Enhancements
+### Challenge: Efficient Handling of Long Transcripts
+**Solution**: Implemented a chunking strategy that preserves conversation context while enabling efficient retrieval.
 
-With more time, I would implement:
-- **Semantic Search**: Using embeddings to find relevant transcript sections beyond keyword matching
-- **Visual Timeline**: Interactive timeline of the patient encounter
-- **Automatic Highlighting**: Highlight relevant transcript sections when answering questions
-- **Voice Input**: Allow providers to ask questions verbally
-- **Expanded Analytics**: Provide insights about the encounter (duration of topics, sentiment analysis)
-- **Export Functionality**: Allow providers to export key findings
+### Challenge: Maintaining Context in Follow-up Questions
+**Solution**: Created a conversation history management system that maintains relevant context while avoiding token limitations.
 
-## License
-This project is created as part of a coding challenge for DeepScribe.
+### Challenge: Accurate Information Retrieval
+**Solution**: Developed a custom RAG implementation using vector similarity search to find the most relevant transcript sections.
+
+---
+
+*This project was created as part of the DeepScribe coding challenge.*
