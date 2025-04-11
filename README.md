@@ -93,17 +93,17 @@ This approach allows for:
 ## Deployment
 
 The application is deployed on Render with separate services for the backend API and frontend interface.
-
+URL - https://deepscribe-med-assistant.onrender.com/
 
 ## Technical Challenges and Solutions
 
-### Challenge: Efficient Handling of Long Transcripts
+**Challenge: Efficient Handling of Long Transcripts**
 **Solution**: Implemented a chunking strategy that preserves conversation context while enabling efficient retrieval.
 
-### Challenge: Maintaining Context in Follow-up Questions
+**Challenge: Maintaining Context in Follow-up Questions**
 **Solution**: Created a conversation history management system that maintains relevant context while avoiding token limitations.
 
-### Challenge: Accurate Information Retrieval
+**Challenge: Accurate Information Retrieval**
 **Solution**: Developed a custom RAG implementation using vector similarity search to find the most relevant transcript sections.
 
 ---
