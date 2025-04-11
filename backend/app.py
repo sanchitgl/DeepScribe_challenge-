@@ -94,4 +94,6 @@ def reset_conversation():
     return jsonify({"status": "Conversation reset successfully"})
 
 if __name__ == '__main__':
-    app.run(debug=True, port=5001)
+    # Get port from environment variable for production (Render)
+    port = int(os.environ.get('PORT', 5001))
+    app.run(host='0.0.0.0', port=port)
