@@ -39,6 +39,15 @@
   .error {
     color: #dc3545;
   }
+  .panels-wrapper {            /* whatever element wraps the two panels */
+    display: flex;
+  }
+  
+  /* 2 – let chat take ±2× the space of transcript on desktop */
+  @media (min-width: 769px) {
+    .transcript-panel { flex: 1 1 35%; }   /* ≈ 35 % */
+    .chat-panel       { flex: 2 1 65%; }   /* ≈ 65 % */
+  }
   
   .transcript-panel, .chat-panel {
     padding: 1rem;

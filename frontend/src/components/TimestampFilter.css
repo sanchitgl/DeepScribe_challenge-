@@ -1,0 +1,25 @@
+.timestamp-filter {
+    margin-bottom: 1rem;
+    padding: 0.75rem;
+    background-color: #f8f9fa;
+    border-radius: 0.5rem;
+    border: 1px solid #e9ecef;
+  }
+  
+  .timestamp-filter h6 {
+    margin-bottom: 0.5rem;
+    font-size: 0.9rem;
+    color: #495057;
+  }
+  
+  .timestamp-input {
+    width: 80px !important;
+    font-size: 0.75rem!important;
+    padding: 0.25rem 0.25rem;
+    text-align: center;
+  }
+  
+  .timestamp-btn {
+    font-size: 0.65rem!important;
+    padding: 0.25rem 0.5rem;
+  }

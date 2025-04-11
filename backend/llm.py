@@ -123,14 +123,14 @@ def generate_suggested_questions(conversation_history):
     
     Important guidelines for generating suggested questions:
     1. Only suggest questions that can be answered based on information in the SOAP note
-    2. Phrase questions to ask about what's documented (e.g., "What ...")
-    3. Make questions specific and relevant to the previous conversation
-    4. Avoid suggesting questions that have already been answered in the conversation
-    5. Focus on clinically relevant information a provider would want to know
+    2. Phrase questions to ask about what's documented in 3rd person
+    3. Avoid suggesting questions that have already been answered in the conversation
+    4. Focus on clinically relevant information a provider would want to know
+    5. Questions should be short, general and succinct
     
-    Based on the conversation so far, suggest 4 follow-up questions.
+    Based on the conversation and patient's SOAP so far, suggest 3 follow-up succinct questions.
     
-    Only return the questions, one per line, with no numbering or additional text.
+    Only return the questions, one per line (have \n as separation), with no numbering or additional text.
     """
     
     # Prepare messages for the API call
@@ -138,15 +138,15 @@ def generate_suggested_questions(conversation_history):
         {"role": "system", "content": prompt}
     ]
     
-    # Add the last few messages from conversation history (up to 3 exchanges)
-    for msg in conversation_history[-4:]:  # Last 6 messages = 3 exchanges
+    # Add the last few messages from conversation history (up to 2 exchanges)
+    for msg in conversation_history[-4:]:  # Last 4 messages = 2 exchanges
         messages.append(msg)
     
     try:
         # Call the OpenAI API
         client = openai.OpenAI(api_key=os.getenv("OPENAI_API_KEY"))
         response = client.chat.completions.create(
-            model="gpt-4o",  # Using a faster, cheaper model for suggestions
+            model="gpt-4",  # Using a faster, cheaper model for suggestions
             messages=messages,
             max_tokens=150,
             temperature=0.5  # Slightly more creative for question variety
