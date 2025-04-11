@@ -1,0 +1,207 @@
+{
+    "metadata": {
+      "patientName": "John Smith",
+      "patientID": "P123456",
+      "providerName": "Dr. Sarah Johnson",
+      "date": "2023-04-10",
+      "duration": "25 minutes"
+    },
+    "transcript": [
+      {
+        "speaker": "Dr. Johnson",
+        "timestamp": "00:00:15",
+        "text": "Hello Mr. Smith, how are you doing today?"
+      },
+      {
+        "speaker": "John Smith",
+        "timestamp": "00:00:20",
+        "text": "Not too well, Doctor. I've been having these headaches for about two weeks now. They seem to be getting worse."
+      },
+      {
+        "speaker": "Dr. Johnson",
+        "timestamp": "00:00:32",
+        "text": "I'm sorry to hear that. Can you describe the headaches? Where exactly do you feel the pain?"
+      },
+      {
+        "speaker": "John Smith",
+        "timestamp": "00:00:40",
+        "text": "It's mostly on the right side of my head. Sometimes it feels like throbbing, and other times it's more of a constant pressure. It's worst in the morning when I wake up, but it never completely goes away."
+      },
+      {
+        "speaker": "Dr. Johnson",
+        "timestamp": "00:01:00",
+        "text": "Are you experiencing any other symptoms along with the headaches? Nausea, dizziness, vision changes?"
+      },
+      {
+        "speaker": "John Smith",
+        "timestamp": "00:01:10",
+        "text": "Yes, I've had some nausea, especially when the headache is really bad. No vomiting though. And sometimes I see flashing lights just before the worst headaches start. I've also been feeling more tired than usual."
+      },
+      {
+        "speaker": "Dr. Johnson",
+        "timestamp": "00:01:30",
+        "text": "Have you noticed any triggers for these headaches? Certain foods, stress, changes in sleep?"
+      },
+      {
+        "speaker": "John Smith",
+        "timestamp": "00:01:40",
+        "text": "I've been under a lot of stress at work lately. We're approaching a big deadline. And I guess my sleep hasn't been great because of that. I'm not sure about food triggers, but I did notice that bright lights and loud noises make it worse once it starts."
+      },
+      {
+        "speaker": "Dr. Johnson",
+        "timestamp": "00:02:05",
+        "text": "Have you taken anything for the pain? Over-the-counter medications or anything else?"
+      },
+      {
+        "speaker": "John Smith",
+        "timestamp": "00:02:15",
+        "text": "I've been taking Advil, but it only helps a little. I tried some Tylenol too, but that didn't seem to do much. My wife suggested I try her prescription migraine medication last weekend when it was really bad, but I didn't want to take someone else's prescription."
+      },
+      {
+        "speaker": "Dr. Johnson",
+        "timestamp": "00:02:40",
+        "text": "That was a good decision. We'll find something appropriate for you. Do you have any history of headaches or migraines before these past two weeks?"
+      },
+      {
+        "speaker": "John Smith",
+        "timestamp": "00:02:50",
+        "text": "Not really. I get occasional tension headaches maybe once every couple of months, but nothing like this."
+      },
+      {
+        "speaker": "Dr. Johnson",
+        "timestamp": "00:03:05",
+        "text": "Any family history of migraines or other neurological conditions?"
+      },
+      {
+        "speaker": "John Smith",
+        "timestamp": "00:03:12",
+        "text": "My mother suffers from migraines. Has for years. And my grandfather had some kind of neurological issue, but I'm not sure exactly what it was."
+      },
+      {
+        "speaker": "Dr. Johnson",
+        "timestamp": "00:03:30",
+        "text": "I see. And how about your general health otherwise? Any other medical conditions or medications you're currently taking?"
+      },
+      {
+        "speaker": "John Smith",
+        "timestamp": "00:03:40",
+        "text": "I have mild hypertension for which I take lisinopril daily. I was diagnosed with that about 3 years ago. Otherwise, I'm generally healthy. I try to exercise a few times a week, though I've been too tired lately with these headaches."
+      },
+      {
+        "speaker": "Dr. Johnson",
+        "timestamp": "00:04:05",
+        "text": "When was your last blood pressure check?"
+      },
+      {
+        "speaker": "John Smith",
+        "timestamp": "00:04:10",
+        "text": "About a month ago. It was 135/85, which my previous doctor said was fine with the medication."
+      },
+      {
+        "speaker": "Dr. Johnson",
+        "timestamp": "00:04:20",
+        "text": "Let's check it again today. Have you experienced any changes in your vision, speech, or strength, especially during these headaches?"
+      },
+      {
+        "speaker": "John Smith",
+        "timestamp": "00:04:35",
+        "text": "No changes in speech or strength. Just the flashing lights I mentioned before the bad headaches start. And sometimes things get a bit blurry when the pain is intense."
+      },
+      {
+        "speaker": "Dr. Johnson",
+        "timestamp": "00:04:50",
+        "text": "Let's do a physical examination now, and then we'll discuss what tests might be appropriate and what treatment options we have."
+      },
+      {
+        "speaker": "Dr. Johnson",
+        "timestamp": "00:15:30",
+        "text": "Alright, Mr. Smith. I've completed the examination. Your blood pressure is slightly elevated today at 145/90. Based on your symptoms and family history, I suspect you're experiencing migraines. The flashing lights you described are what we call an 'aura' and often precede a migraine attack."
+      },
+      {
+        "speaker": "John Smith",
+        "timestamp": "00:15:55",
+        "text": "So it's not something more serious? I was worried it might be..."
+      },
+      {
+        "speaker": "Dr. Johnson",
+        "timestamp": "00:16:00",
+        "text": "Your neurological exam is normal, which is reassuring. However, given that these headaches are new for you and quite severe, I'd like to order an MRI of your brain to rule out other possible causes."
+      },
+      {
+        "speaker": "John Smith",
+        "timestamp": "00:16:20",
+        "text": "Okay, that sounds reasonable. What about in the meantime? These headaches are really affecting my work and daily life."
+      },
+      {
+        "speaker": "Dr. Johnson",
+        "timestamp": "00:16:30",
+        "text": "I'm going to prescribe a medication called sumatriptan. It's specifically for migraines and works best if taken at the first sign of a headache coming on. If you notice the aura, that's a good time to take it. I'll also prescribe an anti-nausea medication called ondansetron to help with the nausea."
+      },
+      {
+        "speaker": "John Smith",
+        "timestamp": "00:16:55",
+        "text": "Are there any side effects I should be aware of?"
+      },
+      {
+        "speaker": "Dr. Johnson",
+        "timestamp": "00:17:00",
+        "text": "Sumatriptan can cause a sensation of tightness or pressure in your chest or throat, dizziness, or fatigue. If you experience severe chest pain or shortness of breath, you should seek immediate medical attention. The ondansetron rarely causes side effects but can sometimes lead to headaches, which obviously isn't ideal given your situation, so let me know if you think it's making things worse."
+      },
+      {
+        "speaker": "John Smith",
+        "timestamp": "00:17:30",
+        "text": "I'll keep an eye out for those. Is there anything else I can do to prevent these headaches?"
+      },
+      {
+        "speaker": "Dr. Johnson",
+        "timestamp": "00:17:40",
+        "text": "Yes, several things. First, try to maintain a regular sleep schedule, even on weekends. Stress management is important, so consider techniques like meditation or deep breathing exercises. Keep a headache diary to track potential triggers - note what you ate, your stress levels, sleep quality, and other factors when a headache occurs. Some people find that certain foods trigger migraines, particularly aged cheeses, processed meats, alcohol (especially red wine), and foods containing MSG or artificial sweeteners."
+      },
+      {
+        "speaker": "John Smith",
+        "timestamp": "00:18:30",
+        "text": "That's helpful. I'll start keeping track. How soon should I schedule the MRI?"
+      },
+      {
+        "speaker": "Dr. Johnson",
+        "timestamp": "00:18:40",
+        "text": "I'll put in the order today, and you should receive a call to schedule it within the next few days. Given your symptoms, I'd like to have it done within the next two weeks if possible."
+      },
+      {
+        "speaker": "John Smith",
+        "timestamp": "00:18:55",
+        "text": "And when should I follow up with you?"
+      },
+      {
+        "speaker": "Dr. Johnson",
+        "timestamp": "00:19:00",
+        "text": "Let's schedule a follow-up in three weeks. That should give us time to get the MRI results and see how you're responding to the medication. If the headaches get worse or you develop new symptoms before then, please don't hesitate to come back sooner."
+      },
+      {
+        "speaker": "John Smith",
+        "timestamp": "00:19:20",
+        "text": "Okay, thank you. One last question - is it okay for me to drive with these headaches?"
+      },
+      {
+        "speaker": "Dr. Johnson",
+        "timestamp": "00:19:30",
+        "text": "I would recommend against driving during a migraine attack, especially if you're experiencing visual disturbances or the pain is severe enough to be distracting. If you feel one coming on while you're out, try to find a safe place to stop and take your medication."
+      },
+      {
+        "speaker": "John Smith",
+        "timestamp": "00:19:50",
+        "text": "Understood. Thanks for your help, Dr. Johnson."
+      },
+      {
+        "speaker": "Dr. Johnson",
+        "timestamp": "00:19:55",
+        "text": "You're welcome, Mr. Smith. The front desk will help you schedule the MRI and follow-up appointment. I hope you start feeling better soon."
+      }
+    ],
+    "soapNote": {
+      "subjective": "45-year-old male presenting with new-onset headaches for the past two weeks. Patient reports right-sided headaches with throbbing/pressure sensation, worst in the mornings. Associated symptoms include nausea and visual aura (flashing lights). No vomiting. Patient notes exacerbation with stress, sleep disruption, bright lights, and loud noises. Has tried ibuprofen with minimal relief and acetaminophen with no relief. No history of similar headaches, only occasional tension headaches in the past. Family history positive for migraines (mother) and unspecified neurological disorder (grandfather). Current medication: lisinopril for hypertension diagnosed 3 years ago. Last BP check one month ago: 135/85.",
+      "objective": "Vital signs: BP 145/90, HR 76, RR 16, Temp 98.6°F. General: Alert, appropriate, in mild distress due to headache. HEENT: PERRLA, EOMI, no papilledema. Neurological exam: CN II-XII intact, normal strength and sensation in all extremities, normal gait, negative Romberg, DTRs 2+ and symmetric. No nuchal rigidity.",
+      "assessment": "1. New onset migraine headaches with aura, likely triggered by stress and sleep disruption. Family history positive for migraines.\n2. Hypertension, slightly elevated today.\n3. Rule out secondary causes of headache such as intracranial mass, hemorrhage, or other structural abnormalities.",
+      "plan": "1. MRI brain without contrast to rule out secondary causes.\n2. Prescribed sumatriptan 50mg, take at onset of headache or aura, may repeat after 2 hours if needed, not to exceed 200mg in 24 hours.\n3. Ondansetron 4mg as needed for nausea.\n4. Advised on lifestyle modifications: regular sleep schedule, stress management techniques, keeping a headache diary to identify triggers.\n5. Discussed warning signs that would necessitate immediate medical attention.\n6. Follow-up appointment in 3 weeks to review MRI results and medication efficacy."
+    }
+  }
