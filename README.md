@@ -16,8 +16,7 @@
 ## Demo Recording 
 
 
-
-![Demo](https://github.com/user-attachments/assets/f714412e-74e0-4c47-9179-93327d6ec2cf.mp4)
+https://github.com/user-attachments/assets/276a445c-514d-4f00-a712-0f66da34f292.mp4
 
 
 
