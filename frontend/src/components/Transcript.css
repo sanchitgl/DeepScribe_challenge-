@@ -24,21 +24,21 @@
     padding: 1rem;
     background-color: #f8f9fa;
     border-bottom: 1px solid #e9ecef;
-    flex-shrink: 0;
+    flex-shrink: 0 !important;
   }
   
   .transcript-header h3 {
     margin: 0 0 0.5rem 0;
-    font-size: 1.2rem;
+    font-size: 1.2rem !important;
     font-weight: 600;
   }
   
   .patient-info {
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: wrap !important;
     gap: 1rem;
     margin-bottom: 1rem;
-    font-size: 0.7rem;
+    font-size: 0.7rem !important;
   }
   
   .patient-info p {
@@ -81,20 +81,20 @@
   .transcript-timestamp {
     grid-area: timestamp;
     color: #6c757d;
-    font-size: 0.8rem;
+    font-size: 0.8rem !important;
     font-family: monospace;
   }
   
   .transcript-speaker {
     grid-area: speaker;
-    font-weight: 500;
-    font-size: 1rem;
+    font-weight: 500 !important;
+    font-size: 1rem !important;
   }
   
   .transcript-text {
     grid-area: text;
     margin-top: 0.25rem;
-    font-size: 0.9rem;
+    font-size: 0.9rem !important;
   }
   
   .highlight {
