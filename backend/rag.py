@@ -1,8 +1,9 @@
 import os
 import numpy as np
-import openai
+from openai import OpenAI
 from sklearn.metrics.pairwise import cosine_similarity
-
+from dotenv import load_dotenv
+load_dotenv()  
 class TranscriptRAG:
     def __init__(self, transcript_data, chunk_size=3):
         """
@@ -82,7 +83,7 @@ class TranscriptRAG:
         
         for chunk in self.chunks:
             try:
-                client = openai.OpenAI(api_key=os.getenv("OPENAI_API_KEY"))
+                client = OpenAI(api_key=os.getenv("OPENAI_API_KEY"))
                 response = client.embeddings.create(
                     input=chunk["text"],
                     model="text-embedding-ada-002"
@@ -111,7 +112,7 @@ class TranscriptRAG:
         
         try:
             # Generate query embedding
-            client = openai.OpenAI(api_key=os.getenv("OPENAI_API_KEY"))
+            client = OpenAI(api_key=os.getenv("OPENAI_API_KEY"))
             query_response = client.embeddings.create(
                 input=query,
                 model="text-embedding-ada-002"

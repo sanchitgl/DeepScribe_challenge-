@@ -17,16 +17,15 @@ def process_query(query, conversation_history):
     context = get_relevant_context_for_query(query, conversation_history)
 
     relevant_chunks, metadata = rag_system.get_relevant_chunks(query)
-
     # Create system message with context and instructions
     system_message = f"""
-You are an AI assistant helping a healthcare provider review a patient-provider conversation transcript.
-Answer the provider's questions based ONLY on the information in the transcript and SOAP note below.
-If the information is not in the transcript or SOAP note, say you don't have that information.
-Be concise but thorough in your responses. 
+        You are an AI assistant helping a healthcare provider review a patient-provider conversation transcript.
+        Answer the provider's questions based ONLY on the information in the transcript and SOAP note below.
+        If the information is not in the transcript or SOAP note, say you don't have that information.
+        Be concise but thorough in your responses. 
 
-{context}
-"""
+        {context}
+        """
     
     # Prepare messages for the API call
     messages = [
